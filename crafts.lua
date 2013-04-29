@@ -102,14 +102,6 @@ minetest.register_craft({
 })
 
 minetest.register_craft( {
-        output = 'homedecor:shingles_terracotta',
-        recipe = {
-                { 'homedecor:roof_tile_terracotta', 'homedecor:roof_tile_terracotta'},
-                { 'homedecor:roof_tile_terracotta', 'homedecor:roof_tile_terracotta'},
-        },
-})
-
-minetest.register_craft( {
         output = 'homedecor:flower_pot_terracotta',
         recipe = {
                 { 'homedecor:roof_tile_terracotta', 'default:dirt', 'homedecor:roof_tile_terracotta' },
@@ -335,63 +327,6 @@ minetest.register_craft({
         type = 'fuel',
         recipe = 'homedecor:wood_table_large',
         burntime = 30,
-})
-
---
-
-minetest.register_craft( {
-        output = 'homedecor:shingles_asphalt 6',
-        recipe = {
-                { 'default:dirt', 'group:dye,basecolor_black', 'default:dirt' },
-                { 'default:sand', 'group:dye,basecolor_black', 'default:sand' },
-                { 'homedecor:plastic_sheeting', 'homedecor:plastic_sheeting', 'homedecor:plastic_sheeting' },
-        },
-	replacements = {
-			{'unifieddyes:black', 'vessels:glass_bottle'},
-			{'unifieddyes:black', 'vessels:glass_bottle'},
-	}
-})
-
-minetest.register_craft( {
-        output = 'homedecor:shingles_asphalt 6',
-        recipe = {
-                { 'default:dirt', 'default:coal_lump', 'default:dirt' },
-                { 'default:sand', 'default:coal_lump', 'default:sand' },
-                { 'homedecor:plastic_sheeting', 'homedecor:plastic_sheeting', 'homedecor:plastic_sheeting' },
-        },
-})
---
-
-minetest.register_craft( {
-        output = 'homedecor:shingles_wood 12',
-        recipe = {
-                { 'default:stick', 'default:wood'},
-                { 'default:wood', 'default:stick'},
-        },
-})
-
-minetest.register_craft( {
-        output = 'homedecor:shingles_wood 12',
-        recipe = {
-                { 'default:wood', 'default:stick'},
-                { 'default:stick', 'default:wood'},
-        },
-})
-
-minetest.register_craft({
-        type = 'fuel',
-        recipe = 'homedecor:shingles_wood',
-        burntime = 30,
-})
-
---
-
-minetest.register_craft( {
-        output = 'homedecor:skylight 9',
-        recipe = { 
-		{ 'default:glass', 'default:glass' },
-		{ 'default:glass', 'default:glass' },
-        },
 })
 
 -- Various colors of shutters
